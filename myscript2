@@ -1,0 +1,5 @@
+#!/bin/bash
+grade=5
+name=Adam
+
+echo "His name: $name, his grade: $grade"

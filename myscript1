@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Home for this current user is: $HOME"
