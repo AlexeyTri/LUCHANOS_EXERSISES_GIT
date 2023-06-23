@@ -1,5 +1,10 @@
 #!/bin/bash
-echo "The current directory is:"
-pwd
-echo "The user logged in is:"
-whoami
+#echo "The current directory is:"
+#pwd
+#echo "The user logged in is:"
+#whoami
+user=$USER
+if [ $user = $USER ]
+then
+echo "$user use this app"
+fi

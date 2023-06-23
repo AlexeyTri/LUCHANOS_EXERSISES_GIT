@@ -1,2 +1,14 @@
 #!/bin/bash
-echo "Home for this current user is: $HOME"
+#echo "Home for this current user is: $HOME"
+#__________________________________________
+#file1="myscript3"
+file2="myscript1"
+found_directory=$(ls $(pwd))
+#echo "directory: $found_directory"
+if grep $file1 $found_directory
+then
+echo "i find file1"
+elif grep $file2 $found_directory
+then
+echo "i find file2"
+fi

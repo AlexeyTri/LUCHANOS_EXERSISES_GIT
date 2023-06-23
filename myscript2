@@ -1,5 +1,13 @@
 #!/bin/bash
-grade=5
-name=Adam
-
-echo "His name: $name, his grade: $grade"
+HOME=$(pwd)
+file="myscript"
+found=$(ls $HOME)
+echo "ls HOME: $found"
+echo "this work director: $HOME"
+echo "file: $file"
+echo "found directory: $found"
+echo "pwd: $(pwd)"
+if grep $file $found
+then
+echo "GOOD"
+fi 
