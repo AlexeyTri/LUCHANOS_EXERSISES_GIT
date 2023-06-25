@@ -1,14 +1,11 @@
 #!/bin/bash
-#echo "Home for this current user is: $HOME"
-#__________________________________________
-#file1="myscript3"
-file2="myscript1"
-found_directory=$(ls $(pwd))
-#echo "directory: $found_directory"
-if grep $file1 $found_directory
+for file in ~/LUCHANOS_GIT_EXERSISES/*
+do
+if [ -d $file ]
 then
-echo "i find file1"
-elif grep $file2 $found_directory
+echo $file: is DIRECTOCTORY
+elif [ -f $file ]
 then
-echo "i find file2"
+echo $file: is FILE
 fi
+done

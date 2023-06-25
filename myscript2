@@ -1,13 +1,11 @@
 #!/bin/bash
-HOME=$(pwd)
-file="myscript"
-found=$(ls $HOME)
-echo "ls HOME: $found"
-echo "this work director: $HOME"
-echo "file: $file"
-echo "found directory: $found"
-echo "pwd: $(pwd)"
-if grep $file $found
-then
-echo "GOOD"
-fi 
+IFS=$'\n'
+for entry in $(cat ~/LUCHANOS_GIT_EXERSISES/myfile)
+do
+echo "Values in entry -  $entry"
+IFS=:
+for word in $entry
+do
+echo $word >> file.txt
+done 
+done 
