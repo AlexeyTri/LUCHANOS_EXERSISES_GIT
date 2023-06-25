@@ -1,0 +1,12 @@
+#!/bin/bash
+echo
+while [ -n "$1" ]
+do
+case "$1" in
+a) echo "This is -a case" ;;
+b) echo "This is -b case" ;;
+-c) echo "This is -c case" ;;
+*) echo "This is another case" ;;
+esac
+shift
+done
