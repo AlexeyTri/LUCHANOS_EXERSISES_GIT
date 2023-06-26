@@ -1,0 +1,22 @@
+#!/bin/bash
+while [ -n "$1" ]
+do
+case "$1" in
+-a) echo "First case -a" ;;
+-b) param=$2
+echo "This -b key with $param #2"
+shift ;;
+-c) echo "third case -c" ;;
+--) shift 
+break ;;
+*) echo "This is * another case" ;;
+esac
+shift
+done
+count=1
+for var in $@
+do 
+echo "Parameter #$count = $var"
+count=$(( $count + 1 ))
+done
+

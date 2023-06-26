@@ -1,0 +1,20 @@
+#!/bin/bash
+read -p "Enter your first and last name:" first last
+echo "Hello: $first $last"
+
+if read -t 1 -p "Enter your job:"
+then
+echo "$REPLY your job"
+else
+echo "Sorry you very slowly"
+fi
+
+read -s -p "Enter password:" pass
+echo "Your pass: $pass"
+
+count=1
+cat README.md | while read line
+do
+echo "#$count line is $line"
+count=$(( $count + 1 ))
+done 
