@@ -1,0 +1,9 @@
+
+name
+ MARY
+second name
+ YANUYK
+adress
+ MOSCOW
+age
+ 35
