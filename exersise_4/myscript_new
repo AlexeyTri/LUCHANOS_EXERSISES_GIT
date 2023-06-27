@@ -1,0 +1,22 @@
+#!/bin/bash
+exec 6<&0
+exec 0< myfile
+count=1
+while read line
+do
+echo "Line #$count is $line"
+count=$(( $count + 1 ))
+done
+exec 0<&6
+read -p "Enter your answer:" answer
+case $answer in
+y) echo "Goodbay" ;;
+n) echo "Please try again" ;;
+esac
+exec 3> myfile
+echo "THIS IS NEW STRING" >&3
+#exec 3>&-
+echo "THIS IS WRONG STRING" >&3
+exec 6>myfile
+lsof -a -p $$ -d 0,1,2,3,6
+#exec 6>&-

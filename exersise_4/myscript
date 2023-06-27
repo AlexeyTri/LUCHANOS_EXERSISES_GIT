@@ -1,0 +1,9 @@
+#!/bin/bash
+exec 0< myfile
+exec 1> correctcontent
+count=1
+while read line
+do
+echo "This is string:#$count, $line"
+count=$(( $count + 1 ))
+done
