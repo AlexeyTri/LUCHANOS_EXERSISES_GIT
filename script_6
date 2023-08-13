@@ -1,0 +1,33 @@
+#!/bin/bash
+#function addnum {
+#echo "Parametr #1 $1"
+#echo "Parametr #2 $2"
+#if [ $# -eq 0 ] || [ $# -gt 2 ]
+#then
+#echo -1
+#elif [ $# -eq 1 ]
+#then
+#echo $(( $1 + $1 ))
+#else
+#echo $(( $1 + $2 ))
+#fi
+#}
+#echo -n " Adding $1 and $2:"
+#value=$(addnum $1 $2)
+#echo " SUM: $value"
+#echo -n "Adding one number:"
+#value=$(addnum $1)
+#echo " SUM:  $value"
+#echo -n "Adding no numbers:"
+#value=$(addnum)
+#echo "This script $0 have two atributs"
+#echo $value
+#echo -n "Adding three numbers:"
+#value=$(addnum $1 $2 $3)
+#echo $value
+function myfunc {
+value=$(( $value + 10 ))
+}
+read -p "Enter number: " value
+myfunc
+echo "New VALUE: $value"
