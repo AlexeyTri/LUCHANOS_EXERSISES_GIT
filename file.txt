@@ -1,9 +1,5 @@
-
-name
- MARY
-second name
- YANUYK
-adress
- MOSCOW
-age
- 35
+Hello! My name is Alex, name my fiwe is Mary
+We have little dauther. She is Sofya
+Name my cat is Stepa.
+We have different second name.Eq second name Mary is YANUYK. It's very join)
+Good bay

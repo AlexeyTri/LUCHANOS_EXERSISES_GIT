@@ -1,0 +1,9 @@
+s!second name!SECOND NAME!g
+1s/name/nAmE/2
+4s/NAME/nAmE/g
+1,4s/nAmE/NaMe/1
+s/Hello/HAY/w newfile.txt
+s/age/AGE/p
+/Name/s/Stepa/STEPA/
+y/GOD/BAD/
+/Name/r ./newfile2.txt
