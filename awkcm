@@ -1,0 +1,5 @@
+#BEGIN{FIELDWIDTHS="3 5 2 5"};
+#BEGIN{FS="."}
+#{print $1 ,$2 ,$3 ,$4 }
+BEGIN{FS="\n";RS=""}
+{print $1, $3}

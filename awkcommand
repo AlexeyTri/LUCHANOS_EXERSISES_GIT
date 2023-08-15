@@ -1,0 +1,6 @@
+BEGIN{print "MY AWK SCRIPT" $0}
+{print $0};
+{print $1};
+{$2="ALEX"; print $0};
+{print $1 " for " $2}
+END{print "this is end file"}

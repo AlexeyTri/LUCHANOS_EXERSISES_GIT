@@ -1,0 +1,6 @@
+BEGIN{print "THIS IS ANKET:"
+print "charakter:\tanswer"
+print "_________ \t _______"}
+FS=":"
+{print $1 "\t" $2}
+END{print "THIS IS THE END"}
