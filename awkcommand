@@ -1,6 +1,9 @@
-BEGIN{print "MY AWK SCRIPT" $0}
-{print $0};
-{print $1};
-{$2="ALEX"; print $0};
-{print $1 " for " $2}
-END{print "this is end file"}
+BEGIN{print "EXERSISE 9"}
+/.ARY/{print $0  "\t ### dot is lost thing"}
+/[A-Z]UYK/{print $0"\t### this is list things"}
+!/^[This]/{print $0"\t### this is negative list"}
+/name*Y/{print $0 "\t###use a star"}
+/sec[on]?d/{print $0 "\t###use ? and list"}
+/[ns]+/{print $0 "\t###use +"}
+/name|second/{print $0 "\t### logic esle"}
+/name(:)?|second(name)?/{print $0 "\t###gruop things"}

@@ -1,0 +1,4 @@
+/Test/{print $0  "\t exersise 1"}
+/^This/{print $0  "\t exersise 2"}
+/test$/{print $0   "\t exersise 3"}
+!/^$/{print $0}
